@@ -15,7 +15,6 @@ class AddEmojiTableViewController: UITableViewController {
     @IBOutlet var usageTextField: UITextField!
     @IBOutlet var saveButton: UIBarButtonItem!
     
-    
     var emoji: Emoji?
     
     init?(coder: NSCoder, emoji: Emoji?) {
@@ -27,7 +26,6 @@ class AddEmojiTableViewController: UITableViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -74,7 +72,5 @@ class AddEmojiTableViewController: UITableViewController {
         let usage = usageTextField.text ?? ""
         
         emoji = Emoji(symbol: symbol, name: name, description: description, usage: usage)
-        
     }
-
 }
